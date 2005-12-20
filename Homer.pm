@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 
-use version;our $VERSION = qv('0.0.1');
+use version;our $VERSION = qv('0.0.2');
 
 require Exporter;
 our @ISA = qw(Exporter);
@@ -34,8 +34,8 @@ Acme::Homer - Perl extension to put a little Homer in your code
   use Acme::Homer;
 
   woohoo "Free beer alright!\n";  
-  mmm "Mcribwhich\n" if $sandwhich eq 'Processed Pork;
-  open my $beer, $marge or doh("could not open beer: $!";
+  mmm "Mcribwhich\n" if $sandwhich eq 'Processed Pork';
+  open my $beer, $marge or doh "could not open $beer: $!";
   ...
 
 =head1 DESCRIPTION
@@ -62,7 +62,7 @@ work exactly like
 
     print STDERR "whatever";
 
-Just let me know and I'll put your name down here as "in your face Flanders" of the day!!
+Just let me know and I'll put your name down here as the "In your face Flanders" of the day!!
 
 =head2 mmm()
 
@@ -88,6 +88,16 @@ Usually I don't do that but I figured: "hey, whats the point of getting uptight 
 =head1 TODO
 
 If you think of any good Homerisms that would make good replacements for real funtion names lemme know!
+
+=head1 In your face Flanders 
+
+This is really a "thanks for contributing" section but I figured why not give it a Homer type name:
+
+=over 4
+
+=item Thanks to Jose Alves de Castro for catching a POD typo.
+
+=back
 
 =head1 AUTHOR
 
